@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>Curriculum</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  <script src="https://kit.fontawesome.com/443786af2d.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -18,7 +18,7 @@
         <option value="de">Deutsch</option>
       </select>
     </div>
-  
+
     <div class="download-button">
       <button onclick="window.print()">Descargar CV en PDF</button>
     </div>
@@ -29,13 +29,13 @@
   <div class="resume">
     <div class="resume_left">
       <div class="resume_profile">
-        <img src="./Foto.PNG" alt="profile_pic">
+        <img src="./Foto.jpeg" alt="profile_pic">
       </div>
       <div class="resume_content">
         <div class="resume_item resume_info">
           <div class="title">
-            <p class="bold" data-key="name">Francisco Javier Jimenez Cohen</p>
-            <p class="regular" data-key="job">Ingeniero de Software</p>
+            <p class="bold" data-key="name">Frank Jose Jimenez Pacheco</p>
+            <p class="regular" data-key="job">Desarrollador Web</p>
           </div>
           <ul>
             <li>
@@ -48,23 +48,26 @@
               <div class="icon">
                 <i class="fas fa-mobile-alt"></i>
               </div>
-              <div class="data" data-key="phone">+541163069305</div>
+              <div class="data" data-key="phone">+541144376739</div>
             </li>
             <li>
               <div class="icon">
                 <i class="fas fa-envelope"></i>
               </div>
-              <div class="data" data-key="email">franjicohen@gmail.com</div>
+              <div class="data" data-key="email">frankjimenezp113@gmail.com</div>
             </li>
-            <li>
-              <div class="icon">
-                <i class="fab fa-linkedin"></i>
-              </div>
-              <div class="data">
-                <p class="semi-bold">LinkedIn</p>
-                <p>www.linkedin.com/in/franciscojimenezcohen</p>
-              </div>
-            </li>
+            <a href="https://www.linkedin.com/in/frank-jimenez-ab863b23b/" target="_blank"
+              style="text-decoration: none; color: white;">
+              <li>
+                <div class="icon">
+                  <i class="fab fa-linkedin"></i>
+                </div>
+                <div class="data">
+                  <p class="semi-bold">LinkedIn</p>
+                  <p>Frank Jimenez</p>
+                </div>
+              </li>
+            </a>
           </ul>
         </div>
 
@@ -73,10 +76,10 @@
             <p class="bold" data-key="skills">Aptitudes principales</p>
           </div>
           <ul>
-            <li onclick="highlightExperience('java')">Java</li>
-            <li onclick="highlightExperience('typescript')">TypeScript</li>
-            <li onclick="highlightExperience('csharp')">C#</li>
             <li onclick="highlightExperience('javascript')">JavaScript</li>
+            <li onclick="highlightExperience('typescript')">TypeScript</li>
+            <li onclick="highlightExperience('nodejs')">NodeJs</li>
+            <li onclick="highlightExperience('mysql')">MySQL</li>
           </ul>
         </div>
 
@@ -88,8 +91,7 @@
             <li onclick="highlightExperience('nestjs')">NestJS</li>
             <li onclick="highlightExperience('reactjs')">ReactJS</li>
             <li onclick="highlightExperience('expressjs')">ExpressJS</li>
-            <li onclick="highlightExperience('netcore')">.NET Core</li>
-            <li onclick="highlightExperience('netframework')">.NET Framework</li>
+            <li onclick="highlightExperience('typeorm')">TypeORM</li>
           </ul>
         </div>
 
@@ -99,35 +101,20 @@
           </div>
           <ul>
             <li onclick="highlightExperience('git')">Git</li>
-            <li onclick="highlightExperience('gitlab')">GitLab</li>
             <li onclick="highlightExperience('github')">GitHub</li>
+            <li onclick="highlightExperience('docker')">Docker</li>
             <li onclick="highlightExperience('kubernetes')">Kubernetes</li>
-            <li onclick="highlightExperience('kafka')">Kafka (4 años de experiencia)</li>
+            <li onclick="highlightExperience('kafka')">Kafka</li>
           </ul>
         </div>
-
-        <div class="resume_item resume_cloud">
-          <div class="title">
-            <p class="bold" data-key="cloud">Nubes</p>
-          </div>
-          <ul>
-            <li onclick="highlightExperience('aws')">AWS</li>
-            <li onclick="highlightExperience('gcp')">GCP</li>
-          </ul>
-        </div>
-
         <div class="resume_item resume_databases">
           <div class="title">
             <p class="bold" data-key="databases">Bases de Datos</p>
           </div>
           <ul>
-            <li onclick="highlightExperience('oracle')">Oracle con PLSQL</li>
-            <li onclick="highlightExperience('sqlserver')">SQL Server con Transact-SQL</li>
             <li onclick="highlightExperience('postgres')">Postgres</li>
             <li onclick="highlightExperience('mysql')">MySQL</li>
-            <li onclick="highlightExperience('dynamodb')">DynamoDB</li>
             <li onclick="highlightExperience('mongodb')">MongoDB</li>
-            <li onclick="highlightExperience('redis')">Redis</li>
           </ul>
         </div>
       </div>
@@ -138,93 +125,29 @@
         <div class="title">
           <p class="bold" data-key="about">Acerca de Mi</p>
         </div>
-        <p data-key="aboutDesc">Soy un ingeniero de software con más de 8 años de experiencia en el desarrollo de soluciones tecnológicas para diversos sectores e industrias. Mi pasión es el código y la innovación, y me dedico a crear aplicaciones que aporten valor y satisfacción a los usuarios y clientes. Actualmente, trabajo como ingeniero de software en Acid Labs, una empresa líder en el diseño y desarrollo de productos digitales.</p>
-        <p data-key="aboutDesc2">En Acid Labs, he participado en proyectos de alto impacto y complejidad, utilizando tecnologías de vanguardia como Node.js, NestJS, TypeORM, Kafka, Docker, Git y CI/CD. Entre ellos, destaco el desarrollo de una billetera virtual llamada Cencopay para Cencosud, uno de los mayores grupos de retail de Latinoamérica, donde integré APIs como Mambu y diseñé una arquitectura orientada a microservicios. Asimismo, fui arquitecto de software para el análisis y desarrollo de mejoras de un ERP para For Promotional Mexico, un cliente del sector publicitario, donde migré el sistema de tecnologías obsoletas a Java 11 y Spring. Además, he gestionado el sistema del marketplace y las implementaciones productivas para el equipo de Seller Management de Cencosud Chile, asegurando su correcto funcionamiento y optimizando los procesos.</p>
-        <p data-key="aboutDesc3">Estas experiencias me han permitido desarrollar y demostrar mis competencias en el desarrollo de software backend, el diseño e integración de API REST, la creación y gestión de microservicios, el uso de brokers como Kafka, la implementación de contenedores con Docker, el control de versiones con Git y la automatización de pruebas y despliegues con CI/CD. Así, he podido entregar soluciones de calidad, escalables, seguras y eficientes, que cumplen con los requerimientos y expectativas de los clientes.</p>
-        <p data-key="aboutDesc4">Mi formación académica también respalda mi trayectoria profesional, ya que cuento con un título de Tecnólogo en Análisis y Desarrollo de Sistemas de Información, una Diplomatura en Software Informático y Aplicaciones Multimedia, y una Especialización en Gestión y Diseño de Bases de Datos. Estos estudios me han proporcionado los conocimientos teóricos y prácticos necesarios para abordar los desafíos y oportunidades del sector tecnológico. Mi objetivo es seguir aprendiendo y creciendo como profesional, aportando mi talento y experiencia a proyectos que generen un impacto positivo en la sociedad y el medio ambiente.</p>
+        <p data-key="aboutDesc">Soy un apasionado programador con una sólida base en JavaScript, TypeScript, NodeJs. A
+          través
+          de proyectos personales, estudios y un proyecto, he desarrollado habilidades en desarrollo web,
+          backend con nodejs y frontend con ReactJS. Me entusiasma enfrentar nuevos desafíos y aprender continuamente
+          sobre las últimas
+          tecnologías. Estoy buscando oportunidades para aplicar mis conocimientos en un entorno profesional y crecer
+          como desarrollador.
+        </p>
+        <p data-key="aboutDesc2"></p>
       </div>
       <div class="resume_item resume_work">
         <div class="title">
           <p class="bold" data-key="work">Experiencia de Trabajo</p>
         </div>
         <ul>
-          <li class="experience-item git kafka aws">
-            <div class="date">octubre de 2023 - mayo de 2024</div>
+          <li class="experience-item git javascript typescript docker mysql reactjs nodejs nestjs">
+            <div class="date">junio de 2024 - actualidad</div>
             <div class="info">
-              <p class="semi-bold" data-key="job1">Ingeniero de software en Acid Labs</p>
-              <p data-key="jobDesc1">Contrato con Cencosud para el desarrollo de billetera virtual llamada cencopay, desarrollando backend para cashin y cashout integrando APIs como Mambu, orientado a microservicios usando broker como Kafka.</p>
+              <p class="semi-bold" data-key="job1">Desarrollador FullStack</p>
+              <p data-key="jobDesc1">Trabajo como desarrollador FullStack enfocado en backend para la empresa academit
+                donde realize parte del backend desde cero usando tecnologias como Nest.js, Typescript, Mysql, SQLite y
+                Docker</p>
             </div>
-          </li>
-          <li class="experience-item git java spring docker kubernetes">
-            <div class="date">abril de 2023 - diciembre de 2023</div>
-            <div class="info">
-              <p class="semi-bold" data-key="job2">Arquitecto de software de TI en Acid Labs</p>
-              <p data-key="jobDesc2">Arquitecto de Software para análisis y desarrollo de mejoras de ERP del cliente For Promotional Mexico, encargado de establecer arquitectura de software basada en microservicios, establecida sobre arquitectura de infraestructura interna, migrando ERP empresarial de tecnologías obsoletas a Java 11 y Spring, Docker, Git, Gitlab, CI/CD, y herramientas de monitoreo.</p>
-            </div>
-          </li>
-          <li class="experience-item git reactjs mysql aws nodejs api-rest docker gitlab ci-cd">
-            <div class="date">octubre de 2021 - abril de 2023</div>
-            <div class="info">
-              <p class="semi-bold" data-key="job3">Desarrollador sénior en Acid Labs</p>
-              <p data-key="jobDesc3">Desarrollador senior, encargado de modificaciones y creaciones de módulos tanto para el frontend como para el backend del cliente Cencosud Chile. Gestión del sistema del marketplace, implementaciones productivas para el equipo de Seller Management, utilizando tecnologías como React.js, MySQL, AWS, Node.js, API REST, Docker, GitLab, Git y CI/CD.</p>
-            </div>
-          </li>
-          <li class="experience-item git java spring">
-            <div class="date">junio de 2022 - julio de 2022</div>
-            <div class="info">
-              <p class="semi-bold" data-key="job4">Arquitecto y Consultor de Software en Academit s.a.s</p>
-              <p data-key="jobDesc4">Auditoria y presentación de propuestas de cambios de .net a Java 11 usando Spring Boot como framework.</p>
-            </div>
-          </li>
-          <li class="experience-item git mysql aws nodejs api-rest docker gitlab ci-cd">
-            <div class="date">mayo de 2021 - marzo de 2022</div>
-            <div class="info">
-              <p class="semi-bold" data-key="job5">Software Development Engineer Sr en Naranja X</p>
-              <p data-key="jobDesc5">Creación y modificación de servicios de backend para el área de home y account. Uso de tecnologías como MySQL, AWS, Node.js, API REST, Docker, GitLab y Git, contribuyendo a la creación de soluciones tecnológicas eficientes y escalables. Implementación de prácticas de CI/CD.</p>
-            </div>
-          </li>
-          <li class="experience-item git nodejs mysql aws api-rest docker gitlab">
-            <div class="date">mayo de 2021 - marzo de 2022</div>
-            <div class="info">
-              <p class="semi-bold" data-key="job6">Responsable del Curso de Backend con NodeJs en Digital House</p>
-              <p data-key="jobDesc6">Encargado del curso de Node.js y Desarrollo web para Latinoamérica y Colombia. Enseñanza de fundamentos y mejores prácticas en el desarrollo web, utilizando tecnologías como MySQL, AWS, Node.js, API REST, Docker, GitLab y Git.</p>
-            </div>
-          </li>
-          <li class="experience-item git oracle dotnet nodejs gitlab ci-cd">
-            <div class="date">octubre de 2019 - mayo de 2021</div>
-            <div class="info">
-              <p class="semi-bold" data-key="job7">Software Development Engineer en Santander Tecnología Argentina</p>
-              <p data-key="jobDesc7">Desarrollo y modificación de servicios de backend y frontend en el área de banca privada. Uso de tecnologías como Oracle PL/SQL, .NET, WPF, WCF, Git, y migración de servicios a tecnologías más recientes como NodeJs, implementaciones con GitLab CI/CD.</p>
-            </div>
-          </li>
-          <li class="experience-item git oracle dotnet">
-            <div class="date">julio de 2018 - octubre de 2019</div>
-            <div class="info">
-              <p class="semi-bold" data-key="job8">Desarrollador de software en Baufest</p>
-              <p data-key="jobDesc8">Creación y modificación de servicios de backend y frontend en el área de banca privada. Uso de tecnologías como Oracle PL/SQL, .NET, WPF y WCF.</p>
-            </div>
-          </li>
-          <li class="experience-item git oracle">
-            <div class="date">diciembre de 2013 - agosto de 2017</div>
-            <div class="info">
-              <p class="semi-bold" data-key="job9">Analista sénior en Bureau Veritas</p>
-              <p data-key="jobDesc9">Análisis de datos relacionados a la calidad de los hidrocarburos, seguimientos de datos de continuidad suministrados por el sistema ESCADA y los informes de laboratorios, creación de aplicaciones para el cálculo volumétrico del llenado de tanques de tierra.</p>
-            </div>
-          </li>
-          <li class="experience-item git oracle dotnet">
-            <div class="date">mayo de 2013 - diciembre de 2013</div>
-            <div class="info">
-              <p class="semi-bold" data-key="job10">Analista en Intertek</p>
-              <p data-key="jobDesc10">Desarrollo de métodos y soluciones para la parametrización de medidas y cálculos para tanques y operaciones de transferencias para un cliente en Zona Franca Barranquilla.</p>
-            </div>
-          </li>
-          <li class="experience-item git mysql oracle dotnet">
-            <div class="date">octubre de 2012 - mayo de 2013</div>
-            <div class="info">
-              <p class="semi-bold" data-key="job11">Analista auxiliar en Camin Cargo Control Group</p>
-              <p data-key="jobDesc11">Ingresos, análisis de datos de bases de datos, alta, baja, modificaciones de datos referentes a la operación de cargue y descargue de químicos del sector de los hidrocarburos.</p>
-            </div>
-          </li>
         </ul>
       </div>
       <div class="resume_item resume_education">
@@ -233,45 +156,58 @@
         </div>
         <ul>
           <li>
-            <div class="date">2019</div>
+            <div class="date">2014</div>
             <div class="info">
-              <p class="semi-bold" data-key="education1">Servicio Nacional de Aprendizaje (SENA)</p>
-              <p data-key="educationDesc1">Especialización en Gestión y Diseño de Bases de Datos, Ingeniería informática</p>
+              <p class="semi-bold" data-key="education1">Escuela Técnica Popular María Auxiliadora - Venezuela, Caracas,
+                Altamira</p>
+              <p data-key="educationDesc1">Educación Media Técnica en Comercio y Servicios Administrativos Mencion
+                Administración Financiera
+              </p>
             </div>
           </li>
           <li>
-            <div class="date">2020</div>
+            <div class="date">2022</div>
             <div class="info">
-              <p class="semi-bold" data-key="education2">Politécnico Grancolombiano</p>
-              <p data-key="educationDesc2">Ingeniería de Software</p>
+              <a href="https://www.udemy.com/certificate/UC-0aab17d4-a7ee-45d9-a421-3cc887c46895/" target="_blank"
+                style="text-decoration: none; color: #fff;">
+                <p class="semi-bold" data-key="education1" style="background-color: #93bbf7; border-radius: 2px;">Curso
+                  de Git y GitHub <i class="fa-solid fa-link" style="color: #ffffff;"></i></p>
+              </a>
+              <p data-key="educationDesc1">GIT+GitHub: Todo un sistema de control de versiones de cero
+              </p>
             </div>
           </li>
           <li>
-            <div class="date">2018 - 2019</div>
+            <div class="date">2023</div>
             <div class="info">
-              <p class="semi-bold" data-key="education3">EducacionIT</p>
-              <p data-key="educationDesc3">Diplomatura en Software Informático y Aplicaciones Multimedia</p>
+              <a href="https://www.udemy.com/certificate/UC-e7656b8f-7a0d-491e-8506-9c171afeca2b/" target="_blank"
+                style="text-decoration: none; color: #fff;">
+                <p class="semi-bold" data-key="education1" style="background-color: #93bbf7; border-radius: 2px;">Curso
+                  de NodeJs<i class="fa-solid fa-link" style="color: #ffffff;"></i></p>
+              </a>
+              <p data-key="educationDesc1">Legaci - Node: De cero a experto
+              </p>
             </div>
           </li>
           <li>
-            <div class="date">2015 - 2017</div>
+            <div class="date">2023</div>
             <div class="info">
-              <p class="semi-bold" data-key="education4">Servicio Nacional de Aprendizaje (SENA)</p>
-              <p data-key="educationDesc4">Tecnologo en Tecnología informática/Tecnología de sistemas informáticos</p>
-            </div>
-          </li>
-          <li>
-            <div class="date">2008 - 2010</div>
-            <div class="info">
-              <p class="semi-bold" data-key="education5">Universidad Autónoma del Caribe</p>
-              <p data-key="educationDesc5">Ingeniería eléctrica, electrónica y de comunicaciones</p>
+              <a href="https://www.udemy.com/certificate/UC-88a60453-1101-45c4-9e32-7bf6d95846b0/" target="_blank"
+                style="text-decoration: none; color: #fff;">
+                <p class="semi-bold" data-key="education1" style="background-color: #93bbf7; border-radius: 2px;">Curso
+                  de TypeScript <i class="fa-solid fa-link" style="color: #ffffff;"></i></p>
+              </a>
+              <p data-key="educationDesc1">TypeScript: Tu completa guía y manual de mano.
+              </p>
             </div>
           </li>
         </ul>
       </div>
-      <div class="resume_item resume_certifications">
+      <div class="resume_item resume_projects">
         <div class="title">
-          <p class="bold" data-key="certifications">Certificaciones</p>
+          <p class="bold" data-key="projects">Proyectos Personales</p>
+          <p class="semi-bold" data-key="education1" style="background-color: #93bbf7; border-radius: 2px;">Curso
+            de TypeScript <i class="fa-solid fa-link" style="color: #ffffff;"></i></p>
         </div>
         <ul>
           <li data-key="certification1">Node.js avanzado</li>
