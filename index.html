@@ -11,20 +11,18 @@
 <body>
   <div class="opciones-page">
     <div class="language-select">
-      <label for="language">Select Language: </label>
-      <select id="language" onchange="changeLanguage()">
+      <label for="language" class="no-print">Select Language: </label>
+      <select id="language" onchange="changeLanguage()" class="no-print">
         <option value="es">Español</option>
         <option value="en">English</option>
         <option value="de">Deutsch</option>
       </select>
     </div>
 
-    <div class="download-button">
+    <div class="download-button no-print">
       <button onclick="window.print()">Descargar CV en PDF</button>
     </div>
-
   </div>
-
 
   <div class="resume">
     <div class="resume_left">
@@ -125,13 +123,23 @@
         <div class="title">
           <p class="bold" data-key="about">Acerca de Mi</p>
         </div>
-        <p data-key="aboutDesc">Soy un apasionado programador con una sólida base en JavaScript, TypeScript, NodeJs. A
-          través
-          de proyectos personales, estudios y un proyecto, he desarrollado habilidades en desarrollo web,
-          backend con nodejs y frontend con ReactJS. Me entusiasma enfrentar nuevos desafíos y aprender continuamente
-          sobre las últimas
-          tecnologías. Estoy buscando oportunidades para aplicar mis conocimientos en un entorno profesional y crecer
-          como desarrollador.
+        <p data-key="aboutDesc" style="text-align:justify;">Soy un desarrollador web apasionado con habilidades
+          intermedias en tecnologías clave
+          como JavaScript, TypeScript, Node.js, NestJS, React, y experiencia en bases de datos como MySQL, SQLite, y
+          MongoDB. También tengo experiencia en Docker y Kubernetes para la gestión de contenedores y orquestación. Mi
+          enfoque está en crear aplicaciones escalables, robustas y eficientes, aplicando las mejores prácticas de
+          desarrollo de software.
+
+          Además de mi perfil técnico, me destaco por mis habilidades para el trabajo en equipo, la colaboración y la
+          resolución creativa de problemas. Me considero una persona proactiva, capaz de aportar ideas innovadoras que
+          contribuyen a un entorno de trabajo positivo.
+
+          Estoy en proceso de mejorar mi nivel de inglés (actualmente nivel intermedio-bajo), con práctica diaria para
+          avanzar hacia la fluidez. Mi objetivo es consolidarme como un desarrollador full stack, con una preferencia
+          por la especialización en back-end.
+
+          Estoy comprometido con el aprendizaje continuo y abierto a enfrentar nuevos desafíos en el dinámico mundo del
+          desarrollo de software.
         </p>
         <p data-key="aboutDesc2"></p>
       </div>
@@ -141,13 +149,83 @@
         </div>
         <ul>
           <li class="experience-item git javascript typescript docker mysql reactjs nodejs nestjs">
-            <div class="date">junio de 2024 - actualidad</div>
+            <div class="date">junio de 2022 - actualidad</div>
             <div class="info">
-              <p class="semi-bold" data-key="job1">Desarrollador FullStack</p>
+              <p class="semi-bold" data-key="job1">Desarrollador FullStack</p><br>
               <p data-key="jobDesc1">Trabajo como desarrollador FullStack enfocado en backend para la empresa academit
                 donde realize parte del backend desde cero usando tecnologias como Nest.js, Typescript, Mysql, SQLite y
-                Docker</p>
+                Docker
+              </p><br>
+              <p data-key="jobDesc1">En el apartado del front trabaje en la configuracion y creaicion de componentes
+                utilizando React y
+                y cambiando sus estilos con la libreria de TailwindCSS
+              </p><br>
+              <p data-key="jobDesc1">Trabajé en la lógica de integración entre el frontend (React) y el backend,
+                asegurando una
+                comunicación fluida y un sistema cohesivo.
+              </p>
             </div>
+          </li>
+          <li class="experience-item git javascript typescript docker mysql reactjs nodejs nestjs">
+            <div class="date">agosto de 2024 - actualidad</div>
+            <div class="info">
+              <p class="semi-bold" data-key="job1">Asesor de Arquitecto en ICBC</p><br>
+              <p data-key="jobDesc1">Prestacion de servicio de Asesor a Arquitecto de ICBC
+
+                Proporcioné asesoría especializada al arquitecto de soluciones de ICBC, colaborando en una iniciativa
+                estratégica del banco para mejorar la experiencia y retención de usuarios.<br><br>
+
+                Analizé y evalué documentación técnica de proveedores de servicios, garantizando la alineación con los
+                objetivos de la iniciativa.<br><br>
+
+                Elaboré diagramas de arquitectura de alto nivel utilizando Visual Paradigm Online para facilitar la
+                comunicación y comprensión de soluciones.<br><br>
+
+                Redacté y gestioné comunicaciones clave con proveedores, asegurando el correcto seguimiento y
+                coordinación
+                de servicios para el banco.<br><br>
+
+                Referencias disponibles a pedido.</p>
+            </div>
+          </li>
+          <li class="experience-item git github javascript typescript docker mysql nodejs nestjs">
+            <div class="date">marzo 2021 - mayo 2022 · 1 año 3 meses</div>
+            <div class="info">
+              <p class="semi-bold" data-key="job1">Desarrollador backend PROCESOS INTEGRALES & NEGOCIACIONES S.A.S</p>
+              <br>
+              <p data-key="jobDesc1">Participé en el desarrollo del sistema Backend:<br><br>
+                Diseño y Administración de Bases de Datos: Me encargué del diseño y administración de las bases de
+                datos empleando MySQL y SQLite, optimizando la gestión de información para cursos, encabezados,
+                artículos clave y lanzamientos futuros de cursos en la página principal.<br><br>
+                Desarrollo del Backend: Implementé el backend utilizando NestJS y TypeORM, documentando todas las
+                API mediante Swagger para asegurar una comprensión clara y un mantenimiento eficiente. También integré
+                la gestión de archivos con Multer, garantizando un almacenamiento seguro y
+                organizado de los recursos en el servidor.<br><br>
+                Mi labor se centró en asegurar la coherencia técnica y la funcionalidad integral del sistema, mejorando
+                tanto la experiencia del usuario como la eficiencia en la administración de contenidos.
+
+            </div>
+          </li>
+          <li class="experience-item git github javascript typescript docker mysql nodejs nestjs">
+            <div class="date">marzo 2020 - mayo 2021 · 1 año 3 meses</div>
+            <div class="info">
+              <p class="semi-bold" data-key="job1">Desarrollador backend FUNDACIÓN SOCIAL PRIMERO LA FAMILIA DE SAN
+                ANTONIO</p>
+              <br>
+              <p data-key="jobDesc1">Colaboré en el desarrollo del aplicativo Backend<br><br>
+
+                Diseño y Gestión de Base de Datos: Diseñé y gestioné la base de datos utilizando MySQL y SQLite,
+                asegurando un manejo eficiente de datos para cursos, encabezados, artículos principales, y futuros
+                lanzamientos de cursos en la landing page.<br><br>
+
+                Desarrollo Backend: Desarrollé el backend utilizando NestJS y TypeORM, documentando todas las API
+                con Swagger para facilitar la comprensión y mantenimiento. Implementé la gestión de archivos con Multer,
+                garantizando un almacenamiento seguro y eficiente de recursos en el servidor.<br><br>
+
+                Mi enfoque se centró en garantizar la cohesión técnica y la funcionalidad de todo el sistema, mejorando
+                tanto la experiencia de usuario como la eficiencia en la gestión de contenidos.<br><br>
+            </div>
+          </li>
         </ul>
       </div>
       <div class="resume_item resume_education">
@@ -201,20 +279,77 @@
               </p>
             </div>
           </li>
+          <li>
+            <div class="date">2024</div>
+            <div class="info">
+              <a href="https://www.udemy.com/certificate/UC-2c67d5a0-4ce2-461c-99ad-a6b8e9c55cbc/" target="_blank"
+                style="text-decoration: none; color: #fff;">
+                <p class="semi-bold" data-key="education1" style="background-color: #93bbf7; border-radius: 2px;">Curso
+                  de React
+                  <i class="fa-solid fa-link" style="color: #ffffff;"></i>
+                </p>
+              </a>
+              <p data-key="educationDesc1">React: De cero a experto ( Hooks y MERN ).
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="date">2024</div>
+            <div class="info">
+              <a href="https://www.udemy.com/certificate/UC-0b0e8575-9539-44b4-910c-4d3a15cae0fe/" target="_blank"
+                style="text-decoration: none; color: #fff;">
+                <p class="semi-bold" data-key="education1" style="background-color: #93bbf7; border-radius: 2px;">Curso
+                  de Nestjs
+                  <i class="fa-solid fa-link" style="color: #ffffff;"></i>
+                </p>
+              </a>
+              <p data-key="educationDesc1">Nest: Desarrollo backend escalable con Node
+              </p>
+            </div>
+          </li>
         </ul>
       </div>
       <div class="resume_item resume_projects">
         <div class="title">
           <p class="bold" data-key="projects">Proyectos Personales</p>
-          <p class="semi-bold" data-key="education1" style="background-color: #93bbf7; border-radius: 2px;">Curso
-            de TypeScript <i class="fa-solid fa-link" style="color: #ffffff;"></i></p>
+          <a href="https://github.com/FrankJimenezDev" target="_blank" style="text-decoration: none; color: #fff;">
+            <p class="semi-bold" data-key="education1" style="background-color: #93bbf7; border-radius: 2px;">GitHub:
+              FrankJimenezDev <i class="fa-solid fa-link" style="color: #ffffff;"></i></p>
+          </a>
         </div>
         <ul>
-          <li data-key="certification1">Node.js avanzado</li>
-          <li data-key="certification2">Tecnologo en Análisis y Desarrollo de Sistemas de Información</li>
-          <li data-key="certification3">Node.js</li>
-          <li data-key="certification4">Git going fast</li>
-          <li data-key="certification5">Unit Testing and Test Driven Development in NodeJs</li>
+          <li data-key="certification1">
+            <p>Users</p>
+            <p>Aplicación backend de inicio de sesión que implementa el patrón pub/sub como producer, utilizando una
+              arquitectura asíncrona con el servicio de Apache Kafka para registrar los eventos de inicio de sesión</p>
+          </li>
+          <li data-key="certification2">
+            <p>Sesion-Manager</p>
+            <p>Aplicación de backend para registrar eventos de inicio de sesión, a través de una
+              arquitectura asíncrona usando el servicio de apache kafka implementado el patrón pub-sub como consumer</p>
+          </li>
+          <li data-key="certification3">
+            <p>kafkanestjs</p>
+            <p>Aplicación backend en NestJS de inicio de sesión que implementa el patrón pub/sub como producer,
+              utilizando una
+              arquitectura asíncrona con el servicio de Apache Kafka para registrar los eventos de inicio de sesión.</p>
+          </li>
+          <li data-key="certification4">
+            <p>kafkanestjsconsumer</p>
+            <p>Aplicación de backend en NestJS para registrar eventos de inicio de sesión, a través de una
+              arquitectura asíncrona usando el servicio de apache kafka implementado el patrón pub-sub como consumer.
+            </p>
+          </li>
+          <li data-key="certification5">
+            <p>ReservationApp</p>
+            <p>Aplicativo Web para realizar registro y login de usuarios, registro y actualización de habitaciones,
+              registro y actualización de reservaciones. Esta app tiene como fin el plasmar todos mis conocimientos en
+              base de datos relacionales, nodejs, typescript y typeorm.</p>
+          </li>
+          <li data-key="certification6">
+            <p>Users</p>
+            <p>app bien chingona</p>
+          </li>
         </ul>
       </div>
     </div>
